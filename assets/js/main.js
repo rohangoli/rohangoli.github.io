@@ -92,15 +92,15 @@
    */
    let downloadResume = select('.download-resume')
    if (downloadResume) {
-     const toggleBacktotop = () => {
+     const toggleDownloadResume = () => {
        if (window.scrollY > 100) {
         downloadResume.classList.add('active')
        } else {
         downloadResume.classList.remove('active')
        }
      }
-     window.addEventListener('load', toggleBacktotop)
-     onscroll(document, toggleBacktotop)
+     window.addEventListener('load', toggleDownloadResume)
+     onscroll(document, toggleDownloadResume)
    }
 
   /**
