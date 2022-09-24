@@ -88,6 +88,22 @@
   }
 
   /**
+   * Download Resume
+   */
+   let downloadResume = select('.download-resume')
+   if (downloadResume) {
+     const toggleBacktotop = () => {
+       if (window.scrollY > 100) {
+        downloadResume.classList.add('active')
+       } else {
+        downloadResume.classList.remove('active')
+       }
+     }
+     window.addEventListener('load', toggleBacktotop)
+     onscroll(document, toggleBacktotop)
+   }
+
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
